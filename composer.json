@@ -1,0 +1,47 @@
+{
+  "name": "cmfstore/mediawiki-emoji",
+  "type": "mediawiki-extension",
+  "description": "MediaWiki emoji extension.",
+  "license": "MIT",
+  "homepage": "https://github.com/cmfstore",
+  "keywords": [
+    "mediawiki",
+    "emoji"
+  ],
+  "authors": [
+    {
+      "name": "z17 Dev",
+      "email": "mail@z17.Dev",
+      "homepage": "https://z17.dev/",
+      "role": "Developer"
+    },
+    {
+      "name": "z17 CX",
+      "email": "mail@z17.cx",
+      "homepage": "https://z17.cx/",
+      "role": "Developer"
+    }
+  ],
+  "support": {
+    "issues": "https://github.com/cmfstore/mediawiki-emoji/issues",
+    "source": "https://github.com/cmfstore/mediawiki-emoji"
+  },
+  "require": {
+    "php": ">=7.2",
+    "composer/installers": "^1.0.1",
+    "cmfstore/mediawiki-kernel": "*",
+    "metastore/lib-emoji": "*"
+  },
+  "autoload": {
+    "classmap": [
+      "MW_EXT_Emoji.class.php"
+    ]
+  },
+  "config": {
+    "optimize-autoloader": true,
+    "prepend-autoloader": false
+  },
+  "extra": {
+    "installer-name": "MW_EXT_Emoji"
+  }
+}
